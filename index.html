@@ -32,9 +32,8 @@
   fetch('https://aaescazu.github.io/days.json')
   .then(res => res.json())
   .then((res) => {
-    const data = res.data;
-    getElement('id').innerHTML =  'id: ' + data.id;
-    getElement('title').innerHTML = 'Symbol: ' + data.title;
+    getElement('id').innerHTML =  'id: ' + id;
+    getElement('title').innerHTML = 'Symbol: ' + title;
   });
 </script>
 
