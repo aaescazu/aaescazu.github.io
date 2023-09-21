@@ -15,17 +15,31 @@
   <meta property="og:description" content="NA Just for today">
   <meta property="og:image" content="image.png">
 
-  <link rel="icon" href="/favicon.ico">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
   <h1></h1>Just for today</h1>
-  
-  <script src="js/scripts.js"></script>
+  function getElement(id) {
+  return document.getElementById(id);
+}
+
+fetch('https://aaescazu.github.io/days.json')
+.then(res => res.json())
+.then((res) => {
+  const data = res.data;
+  getElement('id').innerHTML =  'id: ' + data.id;
+  getElement('title').innerHTML = 'Symbol: ' + data.title;
+});
+
+<div>
+  <p id="id"></p>
+  <p id="title"></p>
+</div>
+
 </body>
 </html>
