@@ -25,22 +25,21 @@
 <body>
   <h1>Just for today</h1>
   
+
+
 <script>
-  function getElement(id) {
-    return document.getElementById(id);
-  }
-  fetch('https://aaescazu.github.io/days.json')
-  .then(res => res.json())
-  .then((res) => {
-    getElement('id').innerHTML =  'id: ' + id;
-    getElement('title').innerHTML = 'Symbol: ' + title;
-  });
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var myObj = JSON.parse(this.responseText);
+        document.getElementById("title").innerHTML = myObj.title;
+    }
+};
+xmlhttp.open("GET", "https://aaescazu.github.io/days.json", true);
+xmlhttp.send();
 </script>
 
-<div>
-  <p id="id"></p>
-  <p id="title"></p>
-</div>
+<div id="title"></div>
 
 </body>
 </html>
