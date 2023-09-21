@@ -23,13 +23,12 @@
 </head>
 
 <body>
-  <h1></h1>Just for today</h1>
-  function getElement(id) {
-  return document.getElementById(id);
-}
-
+  <h1>Just for today</h1>
   
 <script>
+  function getElement(id) {
+    return document.getElementById(id);
+  }
   fetch('https://aaescazu.github.io/days.json')
   .then(res => res.json())
   .then((res) => {
