@@ -11,8 +11,8 @@
   },
   {
     "id": "3",
-    "firstname": "Bob",
-    "lastname": "Jones", 
+    "firstName": "Bob",
+    "lastName": "Jones", 
     "day": "22 September",
     "title": "Keeping the gift",
     "quote": "Life takes on a new meaning when we open ourselves to this gift.",
