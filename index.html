@@ -39,7 +39,7 @@
       function appendData(data) {
           let mainContainer = document.getElementById("myData");
             let div = document.createElement("div");
-            div.innerHTML = '<table><tr><th> ' + data[2].title + '</th><th text-align:right>' + data[2].day + '</th><tr><td colspan="2"><i>' + data[2].quote + '</i><br/></td></tr></table><b>' + data[2].source + '</b><br/><br/>❖<br/><br/>' + data[2].reflection + '<br/><br/>❖<br/><br/><b>Just for today:</b> ' + data[2].today;
+            div.innerHTML = '<table><tr><th> ' + data[2].title + '</th><th text-align:right>' + data[2].day + '</th><tr><td colspan="2"><i>' + data[2].quote + '</i><br/></td></tr><tr><td colspan="2" text-align:right><b>' + data[2].source + '</b></td></tr></table><br/>❖<br/><br/>' + data[2].reflection + '<br/><br/>❖<br/><br/><b>Just for today:</b> ' + data[2].today;
             mainContainer.appendChild(div);
       }
   </script>
