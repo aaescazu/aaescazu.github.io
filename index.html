@@ -39,7 +39,7 @@
       function appendData(data) {
           let mainContainer = document.getElementById("myData");
             let div = document.createElement("div");
-            div.innerHTML = '<b> ' + data[2].title + '      ' + data[2].day + '</b><hr/> ' + data[2].jft;
+            div.innerHTML = '<b> ' + data[2].title + '      ' + data[2].day + '</b><hr/>❖<br/><b>Just for today:</b> ' + data[2].jft;
             mainContainer.appendChild(div);
       }
   </script>
@@ -52,7 +52,5 @@
     console.log('Day of year: ' + day);
   </script>
 
-  ❖
-  
 </body>
 </html>
