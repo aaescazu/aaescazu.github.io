@@ -22,9 +22,7 @@
 
 </head>
 
-<body>
-  <h1>Just for today</h1>
-  
+<body>  
   <div id="myData"></div>
   <script>
       fetch('days.json')
@@ -41,7 +39,7 @@
       function appendData(data) {
           let mainContainer = document.getElementById("myData");
             let div = document.createElement("div");
-            div.innerHTML = '<b> ' + data[2].title + '</b> ' + data[2].day + ' ' + data[2].jft;
+            div.innerHTML = '<b> ' + data[2].title + '      ' + data[2].day + '</b><hr/> ' + data[2].jft;
             mainContainer.appendChild(div);
       }
   </script>
